@@ -32,17 +32,6 @@ It also implements the [Foundation for Sites 6.2](https://github.com/zurb/founda
 7. Run `gulp` to compile the css/js/html watcher and brings up BrowserSync. 
 8. Access WP admin at `http://example.com/wp/wp-admin`
 
-## Deploys
-
-There are two methods to deploy Bedrock sites out of the box:
-
-* [Trellis](https://github.com/roots/trellis)
-* [bedrock-capistrano](https://github.com/roots/bedrock-capistrano)
-
-Any other deployment method can be used as well with one requirement:
-
-`composer install` must be run as part of the deploy process.
-
 ## Documentation
 
 Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
