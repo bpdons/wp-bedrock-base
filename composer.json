@@ -48,11 +48,12 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/clean-image-filenames": "*"
+    "wpackagist-plugin/clean-image-filenames": "*",
+    "wpackagist-plugin/advanced-custom-fields": "*"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","wpackagist-plugin/clean-image-filenames","wpackagist-plugin/wordpress-seo"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","wpackagist-plugin/clean-image-filenames","wpackagist-plugin/wordpress-seo",  "wpackagist-plugin/advanced-custom-fields"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
