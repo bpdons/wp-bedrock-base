@@ -11,27 +11,27 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentyfifteen_post_thumbnail(); ?>
+    <?php shatteredmm_post_thumbnail(); ?>
 
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	</header>
+    <header class="entry-header">
+        <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+    </header>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div>
+    <div class="entry-summary">
+        <?php the_excerpt(); ?>
+    </div>
 
-	<?php if ( 'post' == get_post_type() ) : ?>
+    <?php if ('post' == get_post_type()) : ?>
 
-		<footer class="entry-footer">
-			<?php twentyfifteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit'), '<span class="edit-link">', '</span>' ); ?>
-		</footer>
+        <footer class="entry-footer">
+            <?php twentyfifteen_entry_meta(); ?>
+            <?php edit_post_link(__('Edit'), '<span class="edit-link">', '</span>'); ?>
+        </footer>
 
-	<?php else : ?>
+    <?php else : ?>
 
-		<?php edit_post_link( __( 'Edit'), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
+        <?php edit_post_link(__('Edit'), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>'); ?>
 
-	<?php endif; ?>
+    <?php endif; ?>
 
 </article>

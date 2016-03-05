@@ -9,10 +9,13 @@
  * @since Base Foundation 1.0
  */
 ?>
-	</div>
+</div>
 </div>
 
 <?php wp_footer(); ?>
+<!--[if lt IE 9]>
+<script src="<?php bloginfo('template_url'); ?>/assets/js/respond.min.js"></script>
+<![endif]-->
 
 </body>
 </html>
