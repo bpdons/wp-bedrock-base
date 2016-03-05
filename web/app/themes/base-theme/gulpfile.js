@@ -10,8 +10,8 @@
 
 
 // Project configuration
-var project = 'projectName', // Project name, used for build zip.
-    url = 'website.address', // Local Development URL for BrowserSync. Change as-needed.
+var project = 'Tripod', // Project name, used for build zip.
+    url = 'http://tripod.com.au', // Local Development URL for BrowserSync. Change as-needed.
     bower = './assets/bower_components/'; // Not truly using this yet, more or less playing right now. TO-DO Place in Dev branch
 
 build = './wp-base/', // Files that you want to package into a zip go here
@@ -104,7 +104,7 @@ gulp.task('browser-sync', function () {
  * Sass output styles: https://web-design-weekly.com/2014/06/15/different-sass-output-styles/
  */
 gulp.task('styles', function () {
-    gulp.src('./assets/css/*.scss')
+    gulp.src('./assets/css/partials/*.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -142,7 +142,7 @@ gulp.task('styles', function () {
  * Look at src/js and concatenate those files, send them to assets/js where we then minimize the concatenated file.
  */
 gulp.task('vendorsJs', function () {
-    return gulp.src(['./assets/js/vendor/*.js', bower + '**/*.js'])
+    return gulp.src(['./assets/js/vendor/**/*.js', bower + '**/*.js'])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('./assets/js'))
         .pipe(rename({

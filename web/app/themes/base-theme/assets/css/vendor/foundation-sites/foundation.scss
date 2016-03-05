@@ -6,15 +6,15 @@
  */
 
 // Sass utilities
-@import '../../../../node_modules/foundation-sites/scss/util';
+@import '../../../../node_modules/foundation-sites/scss/util/util';
 
 // Global variables and styles
 @import 'global';
 
 // Components
-@import '../../../../node_modules/foundation-sites/scss/grid';
-@import '../../../../node_modules/foundation-sites/scss/typography';
-@import '../../../../node_modules/foundation-sites/scss/forms';
+@import '../../../../node_modules/foundation-sites/scss/grid/grid';
+@import '../../../../node_modules/foundation-sites/scss/typography/typography';
+@import '../../../../node_modules/foundation-sites/scss/forms/forms';
 @import '../../../../node_modules/foundation-sites/scss/components/visibility';
 @import '../../../../node_modules/foundation-sites/scss/components/float';
 @import '../../../../node_modules/foundation-sites/scss/components/button';
