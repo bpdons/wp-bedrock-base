@@ -32,7 +32,6 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/foundation-flex.min.css"
           media="all"/>
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/custom.min.css" media="all"/>
     <!--[if lt IE 9]>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
     <![endif]-->

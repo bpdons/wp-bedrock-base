@@ -33,8 +33,8 @@ function custom_validation_overall_message_callback($message, $form)
     return $message;
 }
 
-add_filter('gform_ajax_spinner_url', 'custom_ajax_loading_gif_callback', 10, 2);
 function custom_ajax_loading_gif_callback($image_src, $form)
 {
-    return get_bloginfo('template_url') . '/assets/images/loading.gif';
+    return get_bloginfo( 'template_directory' ) . '/assets/images/ajax-loader.gif';
 }
+add_filter('gform_ajax_spinner_url', 'custom_ajax_loading_gif_callback', 10, 2);
