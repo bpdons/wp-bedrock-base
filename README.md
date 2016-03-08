@@ -35,8 +35,13 @@ It also implements the [Foundation for Sites 6.2](https://github.com/zurb/founda
 ## Documentation
 
 Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
-Advanced Gulp workflow for Wordpress documentation is available at [https://ahmadawais.com/my-advanced-gulp-workflow-for-wordpress-themes/](https://ahmadawais.com/my-advanced-gulp-workflow-for-wordpress-themes/)
+
+Advanced Gulp workflow for Wordpress documentation is available at [https://ahmadawais.com/my-advanced-gulp-workflow-for-wordpress-themes/](https://ahmadawais.com/my-advanced-gulp-workflow-for-wordpress-themes/).
+
 Foundation for Sites 6.2 documentation is available at [http://foundation.zurb.com/sites/docs/](http://foundation.zurb.com/sites/docs/)
 
 
 ### Thanks
+
+Many thanks to the Bedrock.io team for sharing their customised Wordpress stack, Ahmad Awais for his blogging efforts with 
+gulp, [http://macr.ae/article/splitting-gulpfile-multiple-files.html](Callum Macrae) for his Gulp file splitting and the team at Zurb for their continued support of Foundation for Sites.
