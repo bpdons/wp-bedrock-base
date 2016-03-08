@@ -11,5 +11,20 @@ module.exports = function (gulp, plugins, buildInclude, build, project, url, bow
             .pipe(plugins.imagemin({optimizationLevel: 7, progressive: true, interlaced: true}))
             .pipe(gulp.dest('./assets/img/'))
             .pipe(plugins.notify({message: 'Images task complete', onLast: true}));
+
+        var fontName = 'iconfont-icons';
+        gulp.src(['./assets/icons/*.svg'])
+            .pipe(plugins.iconfontCss({
+                fontName: fontName,
+                path: './node_modules/gulp-iconfont-css/templates/_icons.scss',
+                targetPath: '../../css/partials/_icons.scss',
+                fontPath: '../fonts/icons/'
+            }))
+            .pipe(plugins.iconfont({
+                fontName: fontName
+            }))
+            .pipe(gulp.dest('./assets/fonts/icons/'))
+            .pipe(plugins.notify({message: 'Font icons generated', onLast: true}));
+
     };
 };

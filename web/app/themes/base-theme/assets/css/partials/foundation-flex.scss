@@ -2,4 +2,6 @@
 
 @include foundation-everything($flex: true);
 
+@import '../../fonts/custom_fonts';
+@import '../../fonts/icons/icons';
 @import 'custom';
